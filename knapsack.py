@@ -1,10 +1,11 @@
 import numpy as np
-
+import ntpath
 
 class knapsack:
     def __init__(self, filename):
         file1 = open(filename, 'r')
         lines = file1.readlines()
+        self.name = ntpath.basename(filename)
 
         firstline = lines[0].split(' ')
         self.size = int(firstline[0])

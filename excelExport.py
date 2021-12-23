@@ -31,4 +31,4 @@ class excelExport:
                 for i in range(1,len(solution)):
                     row.append(solution[i])
         hoja.append(row)
-        wb.save('tsp2.xlsx')
+        wb.save('mochila.xlsx')
